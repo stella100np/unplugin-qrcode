@@ -3,8 +3,9 @@
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@7.1.1",
-  "description": "Register global imports on demand for Vite and Webpack",
+  "description": "Print the QR code of the server address of Vite or Webpack in the console.",
   "license": "MIT",
+  "author": "stella100np <2744636484@qq.com>",
   "homepage": "https://github.com/stella100np/unplugin-qrcode#readme",
   "repository": {
     "type": "git",

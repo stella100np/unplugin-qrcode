@@ -1,28 +1,13 @@
-# unplugin-starter
+# unplugin-qrcode
 
-[![NPM version](https://img.shields.io/npm/v/unplugin-starter?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-starter)
+Print the QR code of the server address of Vite or Webpack in the console.
 
-Starter template for [unplugin](https://github.com/unjs/unplugin).
-
-## Template Usage
-
-To use this template, clone it down using:
-
-```bash
-npx degit antfu/unplugin-starter my-unplugin
-```
-
-And do a global replace of `unplugin-starter` with your plugin name.
-
-Then you can start developing your unplugin 🔥
-
-To test your plugin, run: `pnpm run dev`
-To release a new version, run: `pnpm run release`
+[![NPM version](https://img.shields.io/npm/v/unplugin-qrcode?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-qrcode)
 
 ## Install
 
 ```bash
-npm i unplugin-starter
+npm i unplugin-qrcode
 ```
 
 <details>
@@ -30,7 +15,7 @@ npm i unplugin-starter
 
 ```ts
 // vite.config.ts
-import Starter from 'unplugin-starter/vite'
+import Starter from 'unplugin-qrcode/vite'
 
 export default defineConfig({
   plugins: [
@@ -43,21 +28,6 @@ Example: [`playground/`](./playground/)
 
 <br></details>
 
-<details>
-<summary>Rollup</summary><br>
-
-```ts
-// rollup.config.js
-import Starter from 'unplugin-starter/rollup'
-
-export default {
-  plugins: [
-    Starter({ /* options */ }),
-  ],
-}
-```
-
-<br></details>
 
 
 <details>
@@ -68,7 +38,7 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-starter/webpack')({ /* options */ })
+    require('unplugin-qrcode/webpack')({ /* options */ })
   ]
 }
 ```
@@ -82,7 +52,7 @@ module.exports = {
 // nuxt.config.js
 export default {
   buildModules: [
-    ['unplugin-starter/nuxt', { /* options */ }],
+    ['unplugin-qrcode/nuxt', { /* options */ }],
   ],
 }
 ```
@@ -99,25 +69,10 @@ export default {
 module.exports = {
   configureWebpack: {
     plugins: [
-      require('unplugin-starter/webpack')({ /* options */ }),
+      require('unplugin-qrcode/webpack')({ /* options */ }),
     ],
   },
 }
-```
-
-<br></details>
-
-<details>
-<summary>esbuild</summary><br>
-
-```ts
-// esbuild.config.js
-import { build } from 'esbuild'
-import Starter from 'unplugin-starter/esbuild'
-
-build({
-  plugins: [Starter()],
-})
 ```
 
 <br></details>
