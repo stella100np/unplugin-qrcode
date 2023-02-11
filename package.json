@@ -5,20 +5,19 @@
   "packageManager": "pnpm@7.1.1",
   "description": "Register global imports on demand for Vite and Webpack",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/unplugin-qrcode#readme",
+  "homepage": "https://github.com/stella100np/unplugin-qrcode#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-qrcode.git"
+    "url": "git+https://github.com/stella100np/unplugin-qrcode.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/unplugin-qrcode/issues"
+    "url": "https://github.com/stella100np/unplugin-qrcode/issues"
   },
   "keywords": [
     "unplugin",
     "vite",
     "webpack",
-    "rollup",
-    "transform"
+    "rollup"
   ],
   "exports": {
     ".": {
@@ -84,8 +83,6 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@types/qrcode": "^1.5.0",
-    "qrcode": "^1.5.1",
     "qrcode-terminal": "^0.12.0",
     "unplugin": "^1.0.1"
   },
@@ -94,7 +91,6 @@
     "@types/node": "^18.11.13",
     "@types/qrcode-terminal": "^0.12.0",
     "bumpp": "^8.2.1",
-    "chalk": "^5.2.0",
     "eslint": "^8.29.0",
     "esno": "^0.16.3",
     "fast-glob": "^3.2.12",

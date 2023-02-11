@@ -3,11 +3,8 @@ import Inspect from 'vite-plugin-inspect'
 import Unplugin from '../src/vite'
 
 export default defineConfig({
-  'server': {
-    'host': true
+  server: {
+    host: true,
   },
-  plugins: [
-    Inspect(),
-    Unplugin(),
-  ],
+  plugins: [Inspect(), Unplugin()],
 })
